@@ -1,0 +1,336 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(232, 205, 156);
+}
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 10px 10%;
+    background-color:aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 40px;
+    color:rgb(19, 225, 132);
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: rgb(19, 225, 132);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color:rgb(38, 202, 13);
+
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    background: url("/images/gradient-glassmorphism-background_23-2149447861.avif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.home-content p{
+    font-size: 20px;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(23, 242, 147);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(23, 242, 147);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover {
+    background-color: rgb(23, 242, 147);
+    color: black;
+    box-shadow: 0, 0, 20px rgb(23, 242, 147);
+
+}
+.dropdown-container{
+    display: inline;
+    position: relative;
+}
+.dropdown-content{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    background-color:bisque;
+    text-align: left;
+    display: none;
+}
+.dropdown-content a{
+display: block;
+}
+.dropdown-content a:hover{
+    background-color: gray;
+}
+.dropdown-container:hover .dropdown-content{
+    display: block;
+
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 20px;
+    background: rgb(23, 242, 147);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover{
+    box-shadow: 0 0 50px rgb(23, 242, 147);
+
+}
+img{
+    border-radius: 50%;
+    width: 30%;
+    height: 50%;
+    
+}
+/*about section starts*/
+.hobby{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.hobby-img img{
+   
+    max-width: 600px;
+    height: 80%;
+    width: 80%;
+    border-radius: 50px
+}
+.hobby-text h2{
+    font-size: 60px;
+
+}
+.hobby-text h2 span{
+    color: rgb(237, 184, 40);
+}
+.hobby-text h4{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(7, 90, 162);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.hobby-text p{
+    color: rgb(12, 91, 160);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+/*experience starts*/
+.experience{
+display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.experience-img img{
+   
+    max-width: 600px;
+    height: 80%;
+    width: 80%;
+    border-radius: 50px
+}
+.experience-text h2{
+    font-size: 60px;
+    color: brown;
+
+}
+.experience-text h2 span{
+    color: rgb(236, 42, 8);
+}
+.experience-text h4{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(168, 93, 8);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.experience-text p{
+    color: rgb(160, 160, 12);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+/*education section*/
+.education{
+    background-color: rgb(160, 200, 234);
+}
+.education h2{
+    margin-bottom: 4rem;
+    text-align: center;
+    color: rgb(59, 112, 212);
+    font-size: 60px;
+}
+.education-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.education-container .education-box{
+    position:relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgb(74, 185, 200);
+    overflow: hidden;
+    display: flex;
+}
+/*service*/
+.skill h2{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 60px;
+}
+.skill h2 span{
+    color: blueviolet;
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.skill-container .skill-box{
+    flex: 1 1 30rem;
+    background-color: azure;
+    padding: 3rem 2rem 4rem;
+  
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid black;
+    transition: .5s ease;
+}
+.skill-container .skill-box:hover{
+    border-color: rgb(56, 190, 235);
+    transform: scale(1.02);
+}
+.skill-box i{
+    font-size: 7rem;
+    color: rgba(8, 102, 184, 0.819);
+}
+.skill-box h3{
+    font-size: 2.6rem;
+}
+.skill-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+/*project section start*/
+.project{
+    background-color: rgb(236, 187, 203);
+}
+.project h2{
+    margin-bottom: 4rem;
+    text-align: center;
+    color: brown;
+    font-size: 60px;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.project-container .project-box{
+    position:relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgb(200, 74, 95);
+    overflow: hidden;
+    display: flex;
+}
+/*contact section starts*/
+
+.contact h2{
+    margin-bottom: 3rem;
+    text-align: center;
+    color: rgb(233, 72, 236);
+    font-size: 60px;
+
+}
+.contact h2 span{
+    color: rgb(158, 11, 153);
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background-color:wheat;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: rgb(206, 22, 185);
+}
